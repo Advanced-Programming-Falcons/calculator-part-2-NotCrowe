@@ -20,7 +20,7 @@ int main(void){
             history.append(calcfunc() + "\n");
         }
         else if(decide == 'C'){
-            history.append(calcfunc());
+            history.append(calcfunc() + "\n");
         }
         else if(decide == 'h'){
             cout << history << endl;
