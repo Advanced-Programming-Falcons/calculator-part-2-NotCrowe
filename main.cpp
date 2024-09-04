@@ -14,7 +14,7 @@ int main(void){
     while(ex == 0){
         
         char decide;
-        cout << "Calculate(c) or History(h)?" << endl;
+        cout << "Calculate(c) or History(h)? (exit = 'e')" << endl;
         cin >> decide;
         if(decide == 'c'){
             history.append(calcfunc() + "\n");
@@ -27,6 +27,12 @@ int main(void){
         }
         else if(decide == 'H'){
             cout << history << endl;
+        }
+        else if(decide == 'e'){
+            ex = 1;
+        }
+        else if(decide == 'E'){
+            ex = 1;
         }
 
     }
